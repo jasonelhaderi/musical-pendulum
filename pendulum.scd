@@ -1,5 +1,6 @@
 /* Interactive Simulated Sonification of the Double Pendulum */
 
+/* Run the following two synth defs BEFORE executing the main program loop. */
 (
 SynthDef.new(\custom, {
 	arg freq=263, pan=0, mod=0, amp=1, mul=1;
@@ -18,6 +19,8 @@ SynthDef.new(\custperc, {
 }).add;
 )
 
+
+/* The following code is the main program loop. */
 (
 var w, b1, gslider, grange, gtext, gvalue, tslider, trange, ttext, tvalue, l1slider, l1range, l1text, l1value, l2slider, l2range, l2text, l2value, m1slider, m1range, m1text, m1value, m2slider, m2range, m2text, m2value, run = true;
 
